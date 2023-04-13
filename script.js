@@ -1,6 +1,14 @@
 let menus = document.getElementsByClassName("menus")
-let teste = document.getElementById("teste")
+
 function clicar(){
-    menus.style.display = "block";
-    teste.style.display = "block"
+for (const i in menus) {
+    if (menus[i].style.display === "none" && window.innerWidth < 767) {
+        menus[i].style.display = "block"
+    }else{
+        menus[i].style.display = "none"
+    }
+    if (window.innerWidth > 768) {
+        menus[i].style.display = "block";
+    }
+    }
 }

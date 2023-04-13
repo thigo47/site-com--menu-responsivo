@@ -13,6 +13,17 @@ h1{
     text-align: center;
 }
 
+#menupai{
+    cursor: pointer;
+    user-select: none;
+}
+#menupai:hover{
+    background-color: rgba(255, 255, 255, 0.338);
+    border-radius: 2px;
+    transition: 1s;
+    scale: 1.1;
+    
+}
 div{
     text-align: center;
     margin: 3px;
@@ -20,12 +31,15 @@ div{
     border-radius: 3px;
     padding: 3px;
     display: none;
+    cursor: pointer;
+    
 }
 
 div:hover{
 scale: 1.1;
 transition: 0.5s;
 cursor: pointer;
+user-select: none;
 }
 body{
 background-color: rgb(183, 183, 183);
@@ -34,7 +48,77 @@ main{
     margin: 10px;
     background-color: rgb(255, 255, 255);
     border-radius: 10px;
+    width: 500px;
+    margin: auto;
 }
 p{
     margin: 10px;
+}
+/*tablet */
+@media(min-width :768px) and (max-width:991px) {
+    #menufilho{
+        display: flex;
+    }
+    div{
+        text-align: center;
+        margin: 3px;
+        background-color: rgb(77, 77, 77);
+        border-radius: 3px;
+        padding: 3px;
+        display: block;
+        width: 50px;
+    }
+    #menupai{
+        display: none;
+    }
+    main{
+        width: 500px;
+        margin: auto;
+    }
+}
+/*pc*/
+@media(min-width :991px) and (max-width:1199px) {
+
+    #menufilho{
+        display: flex;
+    }
+    div{
+        text-align: center;
+        margin: 3px;
+        background-color: rgb(77, 77, 77);
+        border-radius: 3px;
+        padding: 3px;
+        display: block;
+        width: 50px;
+    }
+    #menupai{
+        display: none;
+    }
+    main{
+        width: 500px;
+        margin: auto;
+    }
+}
+/*tv*/
+@media(min-width :1199px){
+
+    #menufilho{
+        display: flex;
+    }
+    div{
+        text-align: center;
+        margin: 3px;
+        background-color: rgb(77, 77, 77);
+        border-radius: 3px;
+        padding: 3px;
+        display: block;
+        width: 50px;
+    }
+    #menupai{
+        display: none;
+    }
+    main{
+        width: 500px;
+        margin: auto;
+    }
 }
