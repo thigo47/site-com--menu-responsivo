@@ -7,8 +7,16 @@ for (const i in menus) {
     }else{
         menus[i].style.display = "none"
     }
-    if (window.innerWidth > 768) {
-        menus[i].style.display = "block";
+ 
     }
+}
+
+function tamanho() {
+    for (const i in menus) {
+        if (window.innerWidth >= 768) {
+            menus[i].style.display = "block"
+            
+        }
     }
+
 }
